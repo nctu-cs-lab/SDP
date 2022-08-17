@@ -31,7 +31,7 @@ rf_model_on_full_data = RandomForestRegressor()
 rf_model_on_full_data.fit(X, y)
 
 # path to file you will use for predictions
-test_data_path = '../Project-SDP model/Data/JIRA test set/JIRA-test set-no sum.csv'
+test_data_path = ''
 test_data = pd.read_csv(test_data_path)
 test_X = test_data[features]
 test_preds = rf_model_on_full_data.predict(test_X)
